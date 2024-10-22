@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'authapp/styles/styles.css' %}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Logout</h2>
+      <p>Are you sure you want to logout?</p>
+      <form method="POST" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+        <a href="{% url 'home' %}">Cancel</a>
+      </form>
+    </div>
+  </body>
+</html>

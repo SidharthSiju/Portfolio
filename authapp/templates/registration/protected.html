@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'authapp/styles/styles.css' %}"
+    />
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Protected Page</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia recusandae laboriosam laborum minima neque quidem, fugiat assumenda deleniti, omnis provident eius, nulla quo quod libero beatae perspiciatis illum aliquid ducimus.</p>
+      <a href="{% url 'home' %}">Home</a>
+    </div>
+  </body>
+</html>
